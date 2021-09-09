@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Functional programming in Javascript</title>
+</head>
+<body>
+
+<script>
+
+    /** FUNCTIONS ER 1ST CLASS CITIZEN I JS. https://en.wikipedia.org/wiki/First-class_citizen */
+
+    function greetings() {
+        console.log("Hello world")
+    }
+
+    console.log("Hello world");
+
+    greetings();
+
+    // const er en variable som er en funktion navnet på funktionen er overflødig og kan slettes.
+    const greetingsAnonymousFunction = function /*greetings*/() {
+        console.log("Hello World!");
+    };
+
+    // kalder variablen const greetingsAnonymousFunction.
+    console.log(greetingsAnonymousFunction());
+
+    function returnMeAFunction() {
+        return greetingsAnonymousFunction();
+    }
+
+    console.log(returnMeAFunction());
+
+</script>
+
+</body>
+</html>
