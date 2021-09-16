@@ -9,8 +9,22 @@ import java.util.Date;
 import java.util.List;
 import java.util.Random;
 
+
+
 @RestController
 public class TrashController {
+
+
+    List<String> sins = new ArrayList<>() {{
+        add("Gluttony");
+        add("Shyness");
+        add("Another one");
+        add("Another one");
+        add("Another one");
+        add("Another one");
+        add("Another one");
+        add("The last one");
+    }};
 
 
     List<String> pokemon = new ArrayList<>() {{
@@ -51,26 +65,16 @@ public class TrashController {
 
     @GetMapping("/deadly/{number}")
     public String deadlySins(@PathVariable int number) {
-        switch (number) {
-            case 1:
-                return "Sloth";
-            case 2:
-                return "Gluttonous";
-            case 3:
-                return "Fire";
-            case 4:
-                return "Another one";
-            case 5:
-                return "Infidelity";
-            case 6:
-                return "One more";
-            case 7:
-                return "The last one, and the baddest";
+
+        try {
+            return sins.get(number);
+        } catch (Exception e){
+            return "Hej";
         }
-        return "";
     }
+
     @GetMapping("")
-    public String getDeadlySins() {
+    public List getDeadlySins() {
 
 
         return null;

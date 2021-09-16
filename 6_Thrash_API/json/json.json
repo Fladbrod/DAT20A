@@ -1,0 +1,29 @@
+{
+  "key": "value",
+  "manufacturer": "Airbus",
+  "isBetterThanBoeing": true,
+  "productLineSelection": 112.13376969420,
+  "Pilots": [
+    {"name": "Bob"},
+    {"name1": "Rabia"},
+    {"name2": "Amelia Earheart", "certificateLevel":  5}
+  ],
+  "CEO": [
+    "Bob",
+    "Rabia",
+    "Eve"
+  ],
+
+  "nøgle": "kode1234",
+  "fremtidig løn": 1,
+  "fremtidig løn2": "mil",
+  "er det sandt": true,
+  "folk som er seje": [
+    {"name":  "Joachim"},
+    {"name2": "Joachim"},
+    {"name3": "Joachim"}
+  ],
+  "folk som ikke er så seje": [
+    {"name": "Christian"}
+  ]
+}
