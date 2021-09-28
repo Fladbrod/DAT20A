@@ -1,15 +1,9 @@
 package trash.example.trashapi.controllers;
 
 import org.springframework.web.bind.annotation.*;
-
-import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-import java.util.Random;
-
-
 
 @RestController
 public class TrashController {
@@ -65,7 +59,6 @@ public class TrashController {
 
     @GetMapping("/deadly/{number}")
     public String deadlySins(@PathVariable int number) {
-
         try {
             return sins.get(number);
         } catch (Exception e){
@@ -80,6 +73,15 @@ public class TrashController {
         return null;
     }
 
+
+    @GetMapping("/trash")
+    public String getFoos(@RequestParam String trash, @RequestParam(required = false) String otherTrash) {
+        return trash + " " + otherTrash;
+    }
+
+    @PostMapping("/rubbishbin")
+    public String throwOutRubbish(@RequestBody String rubbish) {
+        System.out.println(rubbish);
+        return "Everything went bad";
+    }
 }
-
-

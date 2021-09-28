@@ -1,0 +1,9 @@
+This shows how to make a real REST API
+
+HTTP Method     Endpoint
+GET             /dinosaurs          Get ALL dinosaurs
+GET             /dinosaurs/{id}     Get dinosaur by ID
+POST            /dinosaurs          Create a dinosaur
+PUT             /dinosaurs/{id}     Overwrites a dinosaur by id
+PATCH           /dinosaurs/{id}     Update some values on dinosaur by id
+DELETE          /dinosaur/{id}      Delete a dinosaur by id
